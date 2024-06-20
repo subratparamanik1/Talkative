@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talkative</title>
+    <link rel="icon" href="./public/chat.jpg">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body class="bg-slate-200">
+    <section class="w-3/4 mx-auto bg-amber-300 rounded-3xl h-[90vh] shadow-2xl">
+        <div class="flex justify-center items-center mt-8">
+            <img src="./public/chat.jpg" alt="" class="md:w-16 md:h-16 w-12 h-12">
+            <h1 class="md:text-6xl text-center font-sans font-bold text-purple-600 my-4 drop-shadow-xl text-3xl">Talkative</h1>
+        </div>
+        <div class="message__area"></div>
+        <div class="flex items-center justify-center">
+            <input type="text" id="textarea" cols="30" rows="1" placeholder="Write a message..." class="w-2/4 h-14 rounded-3xl text-xl p-4 text-purple-600 border-hidden">
+            <button id="send" class="md:w-1/6 w-1/4 h-14 rounded-3xl text-xl text-white bg-red-500 hover:bg-red-600">Send &nbsp;<i class="fa-regular fa-paper-plane"></i></button>
+        </div>
+    </section>
+    <footer class="mt-16">
+        <p class="text-center text-amber-600 font-bold">Made with 💖 by <a href="https://www.linkedin.com/in/subrat-paramanik-005b69263" target="_blank" class="text-purple-600">Subrat</a></p>
+    </footer>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+
+</html>
